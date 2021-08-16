@@ -28,7 +28,7 @@ const Provider = ({ children }) => {
 
   const context = {
     ...cars,
-    signal,
+    ...signal,
     moveCar,
     changeSignal,
   };
