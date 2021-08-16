@@ -12,7 +12,7 @@ const INITIAL_STATE = {
   },
 }
 
-const Provider = ({ children}) => {
+const Provider = ({ children }) => {
   const [cars, setCars] = useState(INITIAL_STATE.cars);
   const moveCar = (car, side) => {
     setCars({ ...cars, [car]: side });
